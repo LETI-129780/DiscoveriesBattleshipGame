@@ -27,3 +27,11 @@
 2. Em cada turno, o jogador dispara 3 tiros indicando as coordenadas (linha, coluna).
 3. O adversário informa o resultado: água, atingido ou afundado.
 4. Vence o jogador que afundar primeiro toda a frota inimiga.
+
+## Navios existentes no tempo dos descobrimentos
+
+### Galeão
+Os Galeões eram grandes navios à vela com vários conveses, usados pela primeira vez como cargueiros armados por europeus do século XVI ao XVIII, durante a Era da Vela, e foram os principais navios recrutados para uso como navios de guerra até as Guerras Anglo-Holandesas em meados do século XVII.
+
+
+<img width="250" height="343" alt="image" src="https://github.com/user-attachments/assets/728af2eb-febc-43aa-9d83-8b6e1ad6bb52" />
