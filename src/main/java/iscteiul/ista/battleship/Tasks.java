@@ -1,5 +1,9 @@
 /**
- *
+ * Classe utilitária que agrupa diferentes tarefas e cenários de teste para a execução
+ * e validação interativa do jogo Batalha Naval dos Descobrimentos (construção de navios, frotas, rondas de tiros e batota).
+ * 
+ * @author LETI-129793
+ * @version 1.0
  */
 package iscteiul.ista.battleship;
 
@@ -17,7 +21,7 @@ public class Tasks {
     private static final String GOODBYE_MESSAGE = "Bons ventos!";
 
     /**
-     * Strings to be used by the user
+     * Strings e comandos a ser utilizados pelo utilizador na consola.
      */
     private static final String NOVAFROTA = "nova";
     private static final String DESISTIR = "desisto";
@@ -35,8 +39,8 @@ public class Tasks {
     /////////////////////////////////////////////////////////////////////////////
 
     /**
-     * This task tests the building up of ships: For each ship, reads positions and
-     * indicates whether the ship occupies each one of such positions or not
+     * Esta tarefa testa a construção de navios: para cada navio, lê posições 
+     * e indica se o navio ocupa ou não cada uma dessas posições.
      */
     public static void taskA() {
         Scanner in = new Scanner(System.in);
@@ -51,7 +55,7 @@ public class Tasks {
     }
 
     /**
-     * This task tests the building up of fleets
+     * Esta tarefa testa a construção e gestão de frotas de navios.
      */
     public static void taskB() {
         Scanner in = new Scanner(System.in);
@@ -76,8 +80,8 @@ public class Tasks {
     }
 
     /**
-     * This task tests the building up of fleets and takes into consideration the
-     * possibility of cheating
+     * Esta tarefa testa a construção de frotas tendo em consideração 
+     * a possibilidade de utilização de batota (visualização do mapa da frota).
      */
     public static void taskC() {
         Scanner in = new Scanner(System.in);
@@ -105,7 +109,8 @@ public class Tasks {
     }
 
     /**
-     * This task also tests the fighting element of a round of three shots
+     * Esta tarefa testa o elemento de combate através de rondas de disparos,
+     * contabilizando acertos, tiros inválidos, repetidos e estado do jogo.
      */
     public static void taskD() {
 
@@ -150,10 +155,10 @@ public class Tasks {
     }
 
     /**
-     * This operation allows the build up of a fleet, given user data
-     *
-     * @param in The scanner to read from
-     * @return The fleet that has been built
+     * Permite a construção de uma frota de navios com base nos dados fornecidos pelo utilizador.
+     * 
+     * @param in O Scanner utilizado para leitura dos dados
+     * @return A frota construída com sucesso
      */
     static Fleet buildFleet(Scanner in) {
         assert in != null;
@@ -178,10 +183,10 @@ public class Tasks {
     }
 
     /**
-     * This operation reads data about a ship, build it and returns it
-     *
-     * @param in The scanner to read from
-     * @return The created ship based on the data that has been read
+     * Lê os dados relativos a um navio a partir do input, constrói-o e retorna-o.
+     * 
+     * @param in O Scanner utilizado para leitura dos dados
+     * @return O navio criado com base nos dados lidos
      */
     static Ship readShip(Scanner in) {
         String shipKind = in.next();
@@ -192,10 +197,10 @@ public class Tasks {
     }
 
     /**
-     * This operation allows reading a position in the map
-     *
-     * @param in The scanner to read from
-     * @return The position that has been read
+     * Permite ler uma posição (coordenadas de linha e coluna) no mapa.
+     * 
+     * @param in O Scanner utilizado para leitura dos dados
+     * @return A posição lida
      */
     static Position readPosition(Scanner in) {
         int row = in.nextInt();
@@ -204,11 +209,11 @@ public class Tasks {
     }
 
     /**
-     * This operation allows firing a round of shots (three) over a fleet, in the
-     * context of a game
-     *
-     * @param in   The scanner to read from
-     * @param game The context game while fleet is being attacked
+     * Permite efetuar uma ronda de disparos (três tiros) sobre a frota, 
+     * no contexto de uma partida em curso.
+     * 
+     * @param in O Scanner utilizado para leitura dos dados
+     * @param game O contexto de jogo em que a frota está a ser atacada
      */
     static void firingRound(Scanner in, IGame game) {
         for (int i = 0; i < NUMBER_SHOTS; i++) {
