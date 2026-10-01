@@ -2,6 +2,7 @@
 
 ## Informações do Curso
 * **Curso:** LETI
+* **Grupo:** TP01_LETI-10
 
 ## Elementos do Grupo
 
