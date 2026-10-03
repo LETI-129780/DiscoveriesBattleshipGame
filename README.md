@@ -36,3 +36,8 @@ Os Galeões eram grandes navios à vela com vários conveses, usados pela primei
 
 
 <img width="250" height="343" alt="image" src="https://github.com/user-attachments/assets/728af2eb-febc-43aa-9d83-8b6e1ad6bb52" />
+
+
+## Comparação entre trabalhar via web e via IDE
+
+O Intellij IDE é um ambiente local completo que permite compilar o código, executar testes, detetar erros de sintaxe e debugging linha a linha em tempo real. A web funciona como uma interface remota, focada no armazenamento, revisão de alterações e gestão do repositório, sem capacidade nativa para compilar projetos complexos.
