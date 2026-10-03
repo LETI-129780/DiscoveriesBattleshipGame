@@ -41,3 +41,6 @@ Os Galeões eram grandes navios à vela com vários conveses, usados pela primei
 ## Comparação entre trabalhar via web e via IDE
 
 O Intellij IDE é um ambiente local completo que permite compilar o código, executar testes, detetar erros de sintaxe e debugging linha a linha em tempo real. A web funciona como uma interface remota, focada no armazenamento, revisão de alterações e gestão do repositório, sem capacidade nativa para compilar projetos complexos.
+
+## Notas
+Ao criar o pull request para adicionar os documentos javadoc no github, o intellij utilizou o email e username local que tinha no computador. Pelo que aparece que "guislopes7" fez o pull request que neste caso é outra conta de "LETI-129785" que não tinha reparado que estava associado no intellij. Sendo que foi possível fazer merge do pull request de guislopes7 através de LETI-129785, apesar de não ser o correto a fazer. Entretanto já mudei o username e o email associados no intellij através dos comandos git config user.name e git config user.email
